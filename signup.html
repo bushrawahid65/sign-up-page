@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="card" class="innerspace" >
+                <div class="signcard">
+                    <h1 class="hd1" > Sign Up</h1>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Email Address" required></input>
+                        <input type="password" class="input-box" placeholder="password" required></input>
+                        <button type="submit"class="bot-box" >Submit</button>
+                        <br>
+                        <input  id="check " type="checkbox"><span> Remember me</span>  
+                    </form>
+                    <button type="button" class="bot-box"  onclick="openRegister()">I'm new here!</button>
+                    <a href="#">Forgot password</a>
+                </div>
+                <div class="registercard">
+                    <h1 class="hd1">Register </h1>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Full Name" required></input>
+                        <input type="email"  class="input-box" placeholder="Email Address" required></input>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <input type="password" class="input-box" placeholder=" Confirm password" required></input>
+                        <button type="submit" class="bot-box" >Register me</button>  
+                    </form>
+                    <button type="button" class="bot-box"  onclick="signUp()">I've an account!
+
+                    </button>
+                    
+    
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+       <script>
+          var card= document.getElementById("card");
+          function  openRegister(){
+             card.style.transform="rotateY(180deg)";
+             console.log("hello");
+             }
+         
+        function  signUp(){
+            console.log("hello from signup");
+            card.style.transform="rotateY(0deg)";
+            console.log("its 2 line ")
+            } 
+        </script>
+</body>
+
+</html>
